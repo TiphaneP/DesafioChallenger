@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DECODIFICADOR</h1>
+    </header>
+    <div class="container">
+      <div class="input-section">
+        <textarea
+          id="input-text"
+          placeholder="Digite seu texto aqui"
+        ></textarea>
+        <div class="buttons">
+          <button onclick="criptografar()">Criptografar</button>
+          <button onclick="descriptografar()">Descriptografar</button>
+        </div>
+      </div>
+      <div class="output-section">
+        <textarea
+          id="output-text"
+          class="output-text"
+          placeholder="Texto Criptografado/Descriptografado"
+        ></textarea>
+        <div class="buttons">
+          <button onclick="copiarTexto()">Copiar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <a class="icon" href="https://github.com/TiphaneP"
+        ><img src="img/git.png" alt="github"
+      /></a>
+      <a class="icon" href="https://www.linkedin.com/in/tiphane-pereira/"
+        ><img src="img/linkedin.png" alt="linkedin"
+      /></a>
+    </footer>
+
+    <script src="challenge.js"></script>
+  </body>
+</html>
